@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HelloWordController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <h1>Hello {{ nom }}! ✅</h1>
+
+    This friendly message is coming from:
+    <ul>
+        <li>Your controller at <code><a href="{{ 'C:/Users/Benamou/testSymphonie/src/Controller/HelloWordController.php'|file_link(0) }}">src/Controller/HelloWordController.php</a></code></li>
+        <li>Your template at <code><a href="{{ 'C:/Users/Benamou/testSymphonie/templates/hello_word/index.html.twig'|file_link(0) }}">templates/hello_word/index.html.twig</a></code></li>
+        <img src="{{ ('public/image/pizza.jpeg') }}">
+    </ul>
+
+</div>
+{% endblock %}
